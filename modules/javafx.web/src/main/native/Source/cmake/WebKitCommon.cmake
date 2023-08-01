@@ -190,6 +190,7 @@ if (NOT HAS_RUN_WEBKIT_COMMON)
     find_package(PerlModules COMPONENTS English FindBin JSON::PP REQUIRED)
 
     # This module looks preferably for version 3 of Python. If not found, version 2 is searched.
+    find_package(Python 3.8.6 REQUIRED)
     find_package(Python COMPONENTS Interpreter REQUIRED)
     # Set the variable with uppercase name to keep compatibility with code and users expecting it.
     set(PYTHON_EXECUTABLE ${Python_EXECUTABLE} CACHE FILEPATH "Path to the Python interpreter")
