@@ -191,20 +191,20 @@ if (NOT HAS_RUN_WEBKIT_COMMON)
 
     # This module looks preferably for version 3 of Python.
     if (CMAKE_SYSTEM_NAME MATCHES "Linux")
-        find_package(Python3 3.6.0 REQUIRED)
-        find_package(Python3 COMPONENTS Interpreter REQUIRED)
-        # Set the variable with uppercase name to keep compatibility with code and users expecting it.
-        set(PYTHON_EXECUTABLE ${Python3_EXECUTABLE} CACHE FILEPATH "Path to the Python interpreter")
-        if (NOT PYTHON_EXECUTABLE OR Python3_VERSION VERSION_LESS 3.6.0)
-           message(FATAL_ERROR "Python 3.6 or higher is required.")
-        endif ()
-    else ()
         find_package(Python3 3.8.0 REQUIRED)
         find_package(Python3 COMPONENTS Interpreter REQUIRED)
         # Set the variable with uppercase name to keep compatibility with code and users expecting it.
         set(PYTHON_EXECUTABLE ${Python3_EXECUTABLE} CACHE FILEPATH "Path to the Python interpreter")
         if (NOT PYTHON_EXECUTABLE OR Python3_VERSION VERSION_LESS 3.8.0)
-            message(FATAL_ERROR "Python 3.8 or higher is required.")
+           message(FATAL_ERROR "Python 3.8 or higher is required.")
+        endif ()
+    else ()
+        find_package(Python3 3.16.0 REQUIRED)
+        find_package(Python3 COMPONENTS Interpreter REQUIRED)
+        # Set the variable with uppercase name to keep compatibility with code and users expecting it.
+        set(PYTHON_EXECUTABLE ${Python3_EXECUTABLE} CACHE FILEPATH "Path to the Python interpreter")
+        if (NOT PYTHON_EXECUTABLE OR Python3_VERSION VERSION_LESS 3.16.0)
+            message(FATAL_ERROR "Python 3.16 or higher is required.")
         endif ()
     endif ()
 
