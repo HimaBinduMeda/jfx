@@ -83,7 +83,7 @@ extern "C" {
  * is insignifiant.
  * On by default unless --without-debugger is passed to configure
  */
-#if 0
+#if 1
 #ifndef WITH_DEBUGGER
 #define WITH_DEBUGGER
 #endif
@@ -96,7 +96,7 @@ extern "C" {
  * is insignifiant.
  * On by default unless --without-profiler is passed to configure
  */
-#if 1
+#if 0
 #ifndef WITH_PROFILER
 #define WITH_PROFILER
 #endif
@@ -112,7 +112,7 @@ extern "C" {
 #ifndef WITH_MODULES
 #define WITH_MODULES
 #endif
-#define LIBXSLT_DEFAULT_PLUGINS_PATH() ""
+#define LIBXSLT_DEFAULT_PLUGINS_PATH() "NULL"
 #endif
 
 /**
