@@ -10039,7 +10039,7 @@ xmlParseEncName(xmlParserCtxt *ctxt) {
  *
  * @deprecated Internal function, don't use.
  *
- *     [80] EncodingDecl ::= S 'encoding' Eq ('"' EncName '"' | 
+ *     [80] EncodingDecl ::= S 'encoding' Eq ('"' EncName '"' |
  *                           "'" EncName "'")
  *
  * this setups the conversion filters.

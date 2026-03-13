@@ -1,8 +1,8 @@
 /**
  * @file
- * 
+ *
  * @brief interface for the memory allocator
- * 
+ *
  * provides interfaces for the memory allocator,
  *              including debugging capabilities.
  *

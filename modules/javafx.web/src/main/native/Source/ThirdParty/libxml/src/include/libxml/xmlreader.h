@@ -1,8 +1,8 @@
 /**
  * @file
- * 
+ *
  * @brief the XMLReader implementation
- * 
+ *
  * API of the XML streaming API based on C\# interfaces.
  *
  * @copyright See Copyright for the status of this software.

@@ -1,8 +1,8 @@
 /**
  * @file
- * 
+ *
  * @brief XML/HTML serializer
- * 
+ *
  * API to save documents or subtrees of documents.
  *
  * @copyright See Copyright for the status of this software.

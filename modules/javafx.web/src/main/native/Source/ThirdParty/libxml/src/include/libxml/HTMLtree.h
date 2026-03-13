@@ -1,8 +1,8 @@
 /**
  * @file
- * 
+ *
  * @brief HTML documents
- * 
+ *
  * This modules implements functions to work with HTML documents,
  * most of them related to serialization.
  *
